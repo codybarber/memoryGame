@@ -1,25 +1,28 @@
-/*.container img {
-  visibility: hidden;
-}
-
-.container {
-  background: gray;
-}
-
-.container:hover img {
-  visibility: visible;
-}
-
-.container:active img {
-  visibility: visible;
-}
-
-.container.selected img{
-  opacity: 1;
-}*/
-
 * {
   box-sizing: border-box;
+}
+
+body {
+  background: url(concrete_seamless.png);
+}
+
+.header {
+  width: 600;
+  font-family: 'Amatic SC', cursive;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 4em;
+}
+
+.button {
+  height: 100px;
+  width: 300;
+  font-family: 'Amatic SC', cursive;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 2em;
 }
 
 .tile {
@@ -37,7 +40,17 @@
   transition: .75s;
 }
 
+.tile.solved img {
+  visibility: visible;
+  opacity: 1;
+}
+
 .tile.open img {
+  visibility: visible;
+  opacity: 1;
+}
+
+.tile.solved img {
   visibility: visible;
   opacity: 1;
 }
