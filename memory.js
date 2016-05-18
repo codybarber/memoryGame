@@ -1,10 +1,12 @@
 $(document).ready(function() {
 
   $('.tile').click(function() {
-    $(this).addClass('selected');
+    $(this).addClass('open');
+    $('img').addClass('animated rubberBand');
       var timeoutId = setTimeout(function() {
-        $('.tile').removeClass('selected');
-      }, 1250);
+        $('.tile').removeClass('open');
+        $('img').removeClass('animated rubberBand');
+      }, 1500);
   });
 
 });

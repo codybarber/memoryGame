@@ -26,15 +26,18 @@
   float: left;
   width: 24%;
   margin: 0.5%;
-  border: .5px solid black;
+  border: .5px solid lightgrey;
 }
 
 .tile img {
   width: 100%;
   display: block;
   visibility: hidden;
+  opacity: 0;
+  transition: .75s;
 }
 
-.tile.selected img {
+.tile.open img {
   visibility: visible;
+  opacity: 1;
 }
