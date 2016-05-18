@@ -1,0 +1,40 @@
+/*.container img {
+  visibility: hidden;
+}
+
+.container {
+  background: gray;
+}
+
+.container:hover img {
+  visibility: visible;
+}
+
+.container:active img {
+  visibility: visible;
+}
+
+.container.selected img{
+  opacity: 1;
+}*/
+
+* {
+  box-sizing: border-box;
+}
+
+.tile {
+  float: left;
+  width: 24%;
+  margin: 0.5%;
+  border: .5px solid black;
+}
+
+.tile img {
+  width: 100%;
+  display: block;
+  visibility: hidden;
+}
+
+.tile.selected img {
+  visibility: visible;
+}
