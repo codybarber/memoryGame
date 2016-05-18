@@ -36,21 +36,39 @@ body {
   width: 100%;
   display: block;
   visibility: hidden;
-  opacity: 0;
+  transform: rotateY(-180deg);
+  backface-visibility: hidden;
+  transition: transform .5s;
   transition: .75s;
 }
 
 .tile.solved img {
   visibility: visible;
   opacity: 1;
+  transform: rotateY(0deg);
 }
 
 .tile.open img {
   visibility: visible;
   opacity: 1;
+  transform: rotateY(0deg);
 }
 
-.tile.solved img {
-  visibility: visible;
-  opacity: 1;
+.tile .back {
+
+}
+
+.tile.open .back,
+.tile.solved .back {
+  transform: rotateY(-180deg);
+  backface-visibility: hidden;
+}
+
+#message {
+  width: 600;
+  font-family: 'Amatic SC', cursive;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 3em;
 }
