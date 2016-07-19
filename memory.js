@@ -5,7 +5,6 @@ var source2;
 var solved = 0;
 
 $(document).ready(function() {
-debugger
   var pictures = _.shuffle([
     'monsters-01.png',
     'monsters-02.png',
@@ -36,6 +35,8 @@ debugger
   for (var i = 0; i < 8; i++) {
     $('#grid').append('<div class="tile">' + '<img class="monster" src="images/' + shuffledPics[i] + '">' + '<div class="back"></div>' + '</div>');
   }
+
+
 
   $('.tile').click(function() {
     if (state === 'first') {

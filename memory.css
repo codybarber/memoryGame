@@ -21,6 +21,7 @@ body {
   width: 300;
   font-family: 'Amatic SC', cursive;
   text-align: center;
+  margin-top: -25px;
   margin-left: auto;
   margin-right: auto;
   font-size: 2em;
@@ -55,10 +56,6 @@ body {
   transform: rotateY(0deg);
 }
 
-.tile .back {
-
-}
-
 .tile.open .back,
 .tile.solved .back {
   transform: rotateY(-180deg);
@@ -69,6 +66,7 @@ body {
   width: 600;
   font-family: 'Amatic SC', cursive;
   text-align: center;
+  margin-top: -50px;
   margin-left: auto;
   margin-right: auto;
   font-size: 3em;
